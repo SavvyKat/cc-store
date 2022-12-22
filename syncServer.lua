@@ -2,11 +2,11 @@ local ARGS = { ... }
 
 local CHANNEL = tonumber(ARGS[1]) or 40100
 local REPO_FULL = ARGS[2]
-local GITHUB_ACCESS_TOKEN = ARGS[3]
-local DIR = ARGS[4]
-local PROGRAM = ARGS[5]
-local PROGRAM_ARGS = ARGS[6]
-local DO_SETUP = ARGS[7] == "true" or false
+--local GITHUB_ACCESS_TOKEN = ARGS[3]
+local DIR = ARGS[3]
+local PROGRAM = ARGS[4]
+local PROGRAM_ARGS = ARGS[5]
+local DO_SETUP = ARGS[6] == "true" or false
 
 local DEPS = {}
 
@@ -38,9 +38,9 @@ local function decode64(data)
 end
 
 local function getFileFromRepo(file)
-    local res = http.get(REPO_FULL..file, {
-        ["Authorization"] = "token "..GITHUB_ACCESS_TOKEN,
-    })
+    local res = http.get(REPO_FULL..file)--, {
+    --    ["Authorization"] = "token "..GITHUB_ACCESS_TOKEN,
+    --})
     if res == nil then return nil end
     local body = textutils.unserialiseJSON(res.readAll())
     local content = body["content"]
