@@ -6,6 +6,6 @@ It acts as a remote file store for programs used in the Minecraft mod Computer C
 
 To install programs from this repo, run the following install [script](https://pastebin.com/ve2feFbv) in-game.
 
-`pastebin run ve2feFbv`
+`pastebin run PGyzeW6p`
 
 It will guide you through the setup process for each respective program.
