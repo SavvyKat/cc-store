@@ -4,7 +4,7 @@
 
 It acts as a remote file store for programs used in the Minecraft mod Computer Craft (CC: Tweaked)
 
-To install programs from this repo, run the following install [script](https://pastebin.com/ve2feFbv) in-game.
+To install programs from this repo, run the following install [script](https://pastebin.com/PGyzeW6p) in-game.
 
 `pastebin run PGyzeW6p`
 
